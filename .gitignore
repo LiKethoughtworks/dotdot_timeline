@@ -1,0 +1,7 @@
+.idea/
+*.iml
+.DS_Store
+npm-debug.log
+node_modules/
+platforms/android/res/xml/config.xml
+platforms/android/debug-signing.properties
