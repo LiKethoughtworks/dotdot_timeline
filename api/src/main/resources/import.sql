@@ -1,3 +1,7 @@
-create table timeline (id int primary key auto_increment, `path` varchar(4000), `date` varchar(4000));
-
-insert into timeline (path, date) values ('/', '2015.12.10');
+CREATE TABLE `Gallery` (
+  `Id` char(16) PRIMARY KEY NOT NULL,
+  `Description` varchar(4000) DEFAULT NULL,
+  `Url` varchar(1000) DEFAULT NULL,
+  `Style` int DEFAULT NULL,
+  `CreateDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
